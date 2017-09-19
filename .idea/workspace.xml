@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="770a6631-da4e-4a04-a172-316ebcd56a08" name="Default" comment="poi">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../plugin/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/poi/annotation/StudentEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/poi/annotation/TestStudentEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/.idea/artifacts/plugin_war_exploded.xml" afterPath="$PROJECT_DIR$/../plugin/.idea/artifacts/plugin_war_exploded.xml" />
+    <list default="true" id="770a6631-da4e-4a04-a172-316ebcd56a08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../plugin/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/plugin.iml" afterPath="$PROJECT_DIR$/../plugin/plugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/pom.xml" afterPath="$PROJECT_DIR$/../plugin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/javamail/service/SendMailService.java" afterPath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/javamail/service/SendMailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/javamail/service/TestHtmlMail.java" afterPath="$PROJECT_DIR$/../plugin/src/main/java/com/xingxue/plugin/javamail/service/TestHtmlMail.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../plugin/out/" />
     <ignored path="$PROJECT_DIR$/../plugin/target/" />
@@ -638,7 +630,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505791532470</updated>
-      <workItem from="1505791546407" duration="6942000" />
+      <workItem from="1505791546407" duration="6988000" />
     </task>
     <task id="LOCAL-00001" summary="no">
       <created>1505792579368</created>
@@ -647,11 +639,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505792579368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="poi">
+      <created>1505805992176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1505805992176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6942000" />
+    <option name="totallyTimeSpent" value="6988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
