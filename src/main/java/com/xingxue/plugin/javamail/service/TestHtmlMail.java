@@ -1,3 +1,4 @@
+/*
 package com.xingxue.plugin.javamail.service;
 
 import com.xingxue.plugin.javamail.entity.Mail;
@@ -14,9 +15,11 @@ import java.util.Date;
 import java.util.Properties;
 
 
+*/
 /**
  * Created by Administrator on 2017/6/14.
- */
+ *//*
+
 public class TestHtmlMail {
 
     public static void send(Mail mail) {
@@ -34,3 +37,4 @@ public class TestHtmlMail {
 }
 
 
+*/

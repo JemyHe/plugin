@@ -1,3 +1,4 @@
+/*
 package com.xingxue.plugin.javamail.service;
 
 import com.xingxue.plugin.javamail.entity.Mail;
@@ -13,9 +14,11 @@ import javax.mail.internet.MimeMultipart;
 import java.util.Date;
 import java.util.Properties;
 
+*/
 /**
  * Created by Administrator on 2017/9/19.
- */
+ *//*
+
 public class SendMailService {
 
     private final static String host = "smtp.qq.com"; //qq邮箱的服务器
@@ -23,11 +26,13 @@ public class SendMailService {
     private final static String password = ".................."; //授权码
     private final static String replayAddress = "1277417298@qq.com"; //你的邮箱
 
-    /**
+    */
+/**
      * 发送html文本信息
      * @param mail
      * @throws Exception
-     */
+     *//*
+
     public static void sendHtmlMail(Mail mail) throws Exception {
             mail.setHost(host);
             mail.setFormName(formName);
@@ -85,7 +90,8 @@ public class SendMailService {
             Transport.send(message);
     }
 
-    /*public static void sendTextMail(MailInfo info) throws Exception {
+    */
+/*public static void sendTextMail(MailInfo info) throws Exception {
 
         info.setHost(host);
         info.setFormName(formName);
@@ -96,7 +102,8 @@ public class SendMailService {
         message.setText(info.getContent());
 
         Transport.send(message);
-    }*/
+    }*//*
+
 
     private static Message getMessage(Mail info) throws Exception {
         final Properties p = System.getProperties();
@@ -143,3 +150,4 @@ public class SendMailService {
         return message;
     }
 }
+*/
