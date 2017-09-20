@@ -31,6 +31,7 @@
   <properties>
     <poi_version>3.16</poi_version>
     <spring_version>4.3.2.RELEASE</spring_version>
+    <quartz_version>2.2.3</quartz_version>
   </properties>
 
 
@@ -65,6 +66,29 @@
       <groupId>cn.afterturn</groupId>
       <artifactId>easypoi-annotation</artifactId>
       <version>3.0.1</version>
+    </dependency>
+
+
+    <!-- spring quatz -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${spring_version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.quartz-scheduler</groupId>
+      <artifactId>quartz</artifactId>
+      <version>${quartz_version}</version>
     </dependency>
 
     <!-- 日志 -->
