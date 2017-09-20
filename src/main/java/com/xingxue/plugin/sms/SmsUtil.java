@@ -1,4 +1,4 @@
-package com.xingxue.plugin.phonemessage;
+package com.xingxue.plugin.sms;
 
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;

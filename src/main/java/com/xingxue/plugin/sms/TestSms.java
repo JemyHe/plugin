@@ -1,4 +1,4 @@
-package com.xingxue.plugin.phonemessage;
+package com.xingxue.plugin.sms;
 /*
 * 1.登录注册阿里云
 * 2.全部导航---产品---云通信---短信服务
@@ -7,7 +7,7 @@ package com.xingxue.plugin.phonemessage;
 * 5.充值
 * 6.获取accesskeys和密码
 * 7.加入maven依赖
-mvn install:-file -Dfile=C:\aliyun-java-sdk-core-3.2.3.jar -DgroupId=com.aliyun -DartifactId=aliyun-java-sdk-core -Dversion=3.2.3 -Dpackaging=jar
+mvn install:install-file -Dfile=C:\aliyun-java-sdk-core-3.2.3.jar -DgroupId=com.aliyun -DartifactId=aliyun-java-sdk-core -Dversion=3.2.3 -Dpackaging=jar
 mvn install:install-file -Dfile=C:\aliyun-java-sdk-dysmsapi-1.0.0-SANPSHOT.jar -DgroupId=com.aliyun -DartifactId=aliyun-java-sdk-dysmsapi -Dversion=1.0.0 -Dpackaging=jar
     <dependency>
       <groupId>com.aliyun</groupId>
