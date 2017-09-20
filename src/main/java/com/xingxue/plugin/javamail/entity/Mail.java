@@ -1,9 +1,5 @@
 package com.xingxue.plugin.javamail.entity;
 
-
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by Administrator on 2017/6/13.
  */
