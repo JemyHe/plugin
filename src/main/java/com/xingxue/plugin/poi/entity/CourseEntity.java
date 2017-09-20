@@ -1,4 +1,4 @@
-package com.xingxue.plugin.poi.annotation.export;
+package com.xingxue.plugin.poi.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.annotation.ExcelCollection;
@@ -24,6 +24,9 @@ public class CourseEntity implements Serializable {
 
     @ExcelCollection(name = "学生", orderNum = "4")
     private List<StudentEntity> students;
+
+    public CourseEntity() {
+    }
 
     public CourseEntity(String id, String name, TeacherEntity mathTeacher, List<StudentEntity> students) {
         this.id = id;
@@ -62,5 +65,15 @@ public class CourseEntity implements Serializable {
 
     public void setStudents(List<StudentEntity> students) {
         this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "CourseEntity{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", mathTeacher=" + mathTeacher +
+                ", students=" + students +
+                '}';
     }
 }

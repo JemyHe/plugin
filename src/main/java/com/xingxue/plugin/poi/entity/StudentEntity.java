@@ -1,4 +1,4 @@
-package com.xingxue.plugin.poi.annotation.export;
+package com.xingxue.plugin.poi.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 
@@ -64,11 +64,25 @@ public class StudentEntity implements Serializable {
         this.registrationDate = registrationDate;
     }
 
+    public StudentEntity() {
+    }
+
     public StudentEntity(String id, String name, int sex, Date birthday, Date registrationDate) {
         this.id = id;
         this.name = name;
         this.sex = sex;
         this.birthday = birthday;
         this.registrationDate = registrationDate;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentEntity{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", birthday=" + birthday +
+                ", registrationDate=" + registrationDate +
+                '}';
     }
 }

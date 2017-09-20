@@ -2,6 +2,9 @@ package com.xingxue.plugin.poi.annotation.export;
 
 import cn.afterturn.easypoi.excel.ExcelExportUtil;
 import cn.afterturn.easypoi.excel.entity.ExportParams;
+import com.xingxue.plugin.poi.entity.CourseEntity;
+import com.xingxue.plugin.poi.entity.StudentEntity;
+import com.xingxue.plugin.poi.entity.TeacherEntity;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.File;
@@ -27,7 +30,7 @@ public class Test {
 
         //导出课程excel表
         List<CourseEntity> courseEntities = initCourseParams();
-        Workbook workbook1 = ExcelExportUtil.exportExcel(new ExportParams("2412312", "测试", "测试"),
+        Workbook workbook1 = ExcelExportUtil.exportExcel(new ExportParams("课程表", "测试", "测试"),
                 CourseEntity.class, courseEntities);
         write(workbook1,"test1");
     }
