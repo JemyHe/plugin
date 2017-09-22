@@ -255,18 +255,6 @@
       <version>2.9.0</version>
     </dependency>
 
-    <!-- http协议 -->
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpcore</artifactId>
-      <version>4.3.1</version>
-    </dependency>
-
     <!-- oss -->
     <dependency>
       <groupId>com.aliyun.oss</groupId>

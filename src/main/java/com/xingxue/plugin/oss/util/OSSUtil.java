@@ -43,7 +43,6 @@ public class OSSUtil {
      * @param path
      */
     public void uploadFile(String path,String key){
-        path="src/main/resources/oss/testFile/钢铁侠.png";
         aliyunOssClient.putObject(OssConstant.ALIYUN_OSS_BUCKET_NAME, key , new File(path));
         aliyunOssClient.shutdown();
     }
@@ -54,7 +53,6 @@ public class OSSUtil {
      * @param dirName 文件夹名称
      */
     public void createDir(String dirName){
-        dirName = "test-directory/";
         aliyunOssClient.putObject(OssConstant.ALIYUN_OSS_BUCKET_NAME, dirName, new ByteArrayInputStream(new byte[0]));
         // 关闭client
         aliyunOssClient.shutdown();
@@ -65,8 +63,8 @@ public class OSSUtil {
      * @param
      */
     public void download(){
-        aliyunOssClient.getObject(new GetObjectRequest(OssConstant.ALIYUN_OSS_BUCKET_NAME, "str.txt"), new File("src/main/resources/oss/download/download.txt"));
-        aliyunOssClient.getObject(new GetObjectRequest(OssConstant.ALIYUN_OSS_BUCKET_NAME, "test.png"), new File("src/main/resources/oss/download/download.png"));
+        aliyunOssClient.getObject(new GetObjectRequest(OssConstant.ALIYUN_OSS_BUCKET_NAME, "test.txt"), new File("src/main/resources/oss/download/download.txt"));
+        aliyunOssClient.getObject(new GetObjectRequest(OssConstant.ALIYUN_OSS_BUCKET_NAME, "file.png"), new File("src/main/resources/oss/download/download.png"));
     }
 
     /**

@@ -20,27 +20,32 @@ public class OSSUtilTest {
 
     @Test
     public void uploadStr() throws Exception {
-        ossUtil.uploadStr("Hello","test.txt");
+        ossUtil.uploadStr("Hello","deal1/test.txt");
     }
 
     @Test
     public void uploadBytes() throws Exception {
+        ossUtil.uploadBytes("Hello".getBytes(),"deal1/bytes.txt");
     }
 
     @Test
     public void uploadFile() throws Exception {
+        ossUtil.uploadFile("src/main/resources/oss/testFile/钢铁侠.png","deal1/test.png");
     }
 
     @Test
     public void createDir() throws Exception {
+        ossUtil.createDir("deal1/");
     }
 
     @Test
     public void download() throws Exception {
+        ossUtil.download();
     }
 
     @Test
     public void createUrl() throws Exception {
+        ossUtil.createUrl("deal1/test.png");
     }
 
 }
