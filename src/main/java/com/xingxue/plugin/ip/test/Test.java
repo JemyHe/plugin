@@ -13,7 +13,7 @@ import java.util.Objects;
 public class Test {
     public static void main(String[] args) {
         //ip = "125.76.165.190";
-        //ip = "218.25.19.154";
+        //ip = "218.25.19.155";
         String ip = "210.75.225.254";
         String ipInfo = IpUtil.getIpInfo(ip);
         //JSON的反序列化
