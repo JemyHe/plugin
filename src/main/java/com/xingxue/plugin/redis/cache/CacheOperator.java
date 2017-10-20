@@ -114,6 +114,10 @@ public abstract class CacheOperator {
 
     /**
      * 根据Key前缀获取对应的所有实体
+     * d1:dealCategory
+     * d2:.....
+     * ...
+     * d30:
      * @param keyPrefix
      * @param clazz
      * @return

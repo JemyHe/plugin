@@ -1,30 +1,99 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery自适应倒计时</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery.raty评价插件</title>
 
-<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
-<script src="js/jquery.countdown.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="jquery.raty.js"></script>
+    <link href="jquery.raty.css"/>
 
 </head>
 <body>
-<div id="getting-started"></div>
-<div id="numDiv"></div>
-<!-- start of the javascript code that handles the countdown -->
+    <h3>生成默认评价</h3>
+    <div id="raty_1"></div>
 
-<script type="text/javascript">
-  $("#getting-started").countdown("2017/09/25 10:04:00", function(event) {//参数一:设定到期时间，参数二:执行的事件
-    $(this).text(
-      event.strftime('%D days %H:%M:%S')//修改div中的时间内容
-    );
-  }).on('finish.countdown', function(event) {//回调方法，倒计时结束后执行的事件
-  console.log(123);
+    <h3>生成默认评价,初始化为三星</h3>
+    <div id="raty_2"></div>
 
-});
+    <h3>生成默认评价,利用回调函数初始化为一星</h3>
+    <div id="raty_3" data-score="1"></div>
 
-</script>
+    <h3>生成默认评价,将选择的分数缓存在input框中</h3>
+    <div id="raty_4"></div>
+
+    <h3>修改生成的星星数量</h3>
+    <div id="raty_5"></div>
+
+    <h3>通过回调函数设置星星数量</h3>
+    <div id="raty_6" data-number="6"></div>
+
+    <h3>设置为只读</h3>
+    <div id="raty_7" ></div>
+
+    <h3>设置评价后点击事件</h3>
+    <div id="raty_8"></div>
+
+
+
+    <script type="text/javascript">
+
+        $(function () {
+            raty.init();
+        })
+
+        var raty = {
+            init:function () {
+                raty.method.raty_1();
+                raty.method.raty_2();
+                raty.method.raty_3();
+                raty.method.raty_4();
+                raty.method.raty_5();
+                raty.method.raty_6();
+                raty.method.raty_7();
+                raty.method.raty_8();
+            },
+            method:{
+                raty_1:function () {
+                    $("#raty_1").raty();
+                },
+                raty_2:function () {
+                    $("#raty_2").raty({score:3})
+                },
+                raty_3:function(){
+                    $("#raty_3").raty({score:function() {
+                        return $(this).attr('data-score');
+                    }})
+                },
+                raty_4:function(){
+                    $("#raty_4").raty({scoreName:"test"});
+                },
+                raty_5:function () {
+                    $("#raty_5").raty({number:10});
+                },
+                raty_6:function () {
+                    $("#raty_6").raty({number:function () {
+                        return $(this).attr('data-number');
+                    }});
+                },
+                raty_7:function () {
+                    $("#raty_7").raty({
+                        readOnly: true,
+                        score: 3
+                    });
+                },
+                raty_8:function () {
+                    $("#raty_8").raty({
+                        click: function(score, evt) {
+                            alert('ID: ' + this.id + "\nscore: " + score + "\nevent: " + evt);
+                        }
+                    });
+                }
+
+            }
+        }
+
+    </script>
 </body>
 </html>
 

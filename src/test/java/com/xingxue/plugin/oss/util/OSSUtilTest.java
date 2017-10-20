@@ -20,7 +20,7 @@ public class OSSUtilTest {
 
     @Test
     public void uploadStr() throws Exception {
-        ossUtil.uploadStr("Hello","deal1/test.txt");
+        ossUtil.uploadStr("Hello","deal1/test1111.txt");
     }
 
     @Test
@@ -30,12 +30,12 @@ public class OSSUtilTest {
 
     @Test
     public void uploadFile() throws Exception {
-        ossUtil.uploadFile("src/main/resources/oss/testFile/钢铁侠.png","deal1/test.png");
+        ossUtil.uploadFile("src/main/resources/oss/testFile/钢铁侠.png","deal1/ironman.png");
     }
 
     @Test
     public void createDir() throws Exception {
-        ossUtil.createDir("deal1/");
+        ossUtil.createDir("deal2/");
     }
 
     @Test
