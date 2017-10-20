@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery自适应倒计时</title>
+
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+
+</head>
+<body>
+<div id="getting-started"></div>
+<div id="numDiv"></div>
+<!-- start of the javascript code that handles the countdown -->
+
+<script type="text/javascript">
+  $("#getting-started").countdown("2017/09/25 10:04:00", function(event) {//参数一:设定到期时间，参数二:执行的事件
+    $(this).text(
+      event.strftime('%D days %H:%M:%S')//修改div中的时间内容
+    );
+  }).on('finish.countdown', function(event) {//回调方法，倒计时结束后执行的事件
+  console.log(123);
+
+});
+
+</script>
+</body>
+</html>
+
